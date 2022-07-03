@@ -1,0 +1,10 @@
+SQLite
+
+create table userinfo(username varchar(12) primary key, password varchar(20) not null, email varchar(20), isadmin bit not null)
+
+create table book(id integer primary key autoincrement, name varchar(40), author varchar(20), price numeric(10,2), sales int, stock int, img_path varchar(50))
+
+create table order_info(order_id varchar(20) primary key, create_time datetime, price numeric(10,2), status int, user_id varchar(12), FOREIGN KEY (user_id) REFERENCES userinfo(username) 
+)
+
+create table order_item(id integer primary key autoincrement, name varchar(40), count int, price numeric(10,2), total_price numeric(10,2), order_id varchar(20), FOREIGN KEY (order_id) REFERENCES order_info(order_id))
