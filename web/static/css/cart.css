@@ -1,0 +1,27 @@
+.update{
+    width: 70px;
+    text-align: center;
+    margin: 0 auto;
+}
+.confirm_btn, .confirm_false, .confirm_update, .checkout{
+    background-color: #d2515d;
+    border-color: #d2515d;
+
+}
+.modal-footer{
+    justify-content: center;
+}
+.confirm_btn:hover, .confirm_false:hover, .confirm_update:hover, .checkout:hover{
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+.cart_info{
+    display: flex;
+}
+.number{
+    display: flex;
+    margin: 0 auto;
+}
+.number div{
+    margin: 0;
+}

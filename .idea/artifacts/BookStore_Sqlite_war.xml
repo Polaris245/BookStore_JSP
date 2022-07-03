@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="BookStore_Sqlite:war">
+    <output-path>$PROJECT_DIR$/out/artifacts/BookStore_Sqlite_war</output-path>
+    <root id="archive" name="BookStore_Sqlite_war.war">
+      <element id="artifact" artifact-name="BookStore_Sqlite:war exploded" />
+    </root>
+  </artifact>
+</component>

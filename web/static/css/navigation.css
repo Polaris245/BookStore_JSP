@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow: auto;
+}
+#header {
+    height: 100px;
+    width: 80%;
+    vertical-align: middle;
+}
+#main {
+    width: 80%;
+    margin: 10px auto 10px;
+}
+.wel_word{
+    font-size: 50px;
+}
+#header div a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#header div{
+    float: right;
+    margin-top: 55px;
+}
+.logo_img{
+    float: left;
+}
+div{
+    margin: 10px auto;
+}
+.nav{
+    display: flex;
+    list-style: none;
+    width: fit-content;
+    /*max-width: 90vw;*/
+    margin-bottom: 0;
+}
+.nav li{
+    width: auto;
+    padding: 12px 0;
+    margin: 0 6px 0;
+    /* 过渡效果 */
+    transition: 0.3s;
+}
+.nav li:hover{
+    background-color: #79bd9a;
+}
+.nav li a{
+    color: #91C1B2;
+    text-decoration: none;
+    letter-spacing: 3px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.nav li a span{
+    position: relative;
+    transition: 0.3s;
+}
+.nav li a span::before{
+    /* data-text是自定义属性（会在js代码里赋值），attr函数可以获取元素的属性值 */
+    content: attr(data-text);
+    position: absolute;
+    /* 默认下移130% */
+    transform: translateY(130%);
+}
+.nav li:hover span{
+    /* 悬停时上移130% */
+    transform: translateY(-130%);
+    color: #fff;
+}
